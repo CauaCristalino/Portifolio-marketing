@@ -1,0 +1,87 @@
+/* ==========================================================================
+   TOKENS DE DESIGN
+   Fonte única de verdade para cores, tipografia, espaçamento e movimento.
+   Para mudar a identidade do site, edite apenas este arquivo.
+   ========================================================================== */
+
+:root {
+  color-scheme: dark;
+
+  /* ---- Cores: base ---------------------------------------------------- */
+  --color-bg: #0d0d0d;              /* fundo principal */
+  --color-surface: #141414;         /* cartões e blocos */
+  --color-surface-raised: #1c1c1b;  /* hover de cartões, campos de formulário */
+
+  /* ---- Cores: texto ---------------------------------------------------- */
+  --color-text: #f5f2ec;            /* texto principal (branco quente) */
+  --color-text-muted: #b3afa7;      /* texto de apoio — contraste 8,9:1 */
+  --color-text-subtle: #8f8b84;     /* rótulos e metadados — contraste 5,7:1 */
+
+  /* ---- Cores: destaque -------------------------------------------------- */
+  --color-accent: #ff4d2e;          /* cor de destaque (o "REC" da câmera) */
+  --color-accent-hover: #ff6c52;
+  --color-accent-soft: rgba(255, 77, 46, 0.14);
+  --color-on-accent: #0d0d0d;       /* texto sobre a cor de destaque — 6,3:1 */
+
+  /* ---- Cores: linhas e estados ------------------------------------------ */
+  --color-line: rgba(245, 242, 236, 0.12);
+  --color-line-strong: rgba(245, 242, 236, 0.3);
+  --color-success: #62d49b;
+  --color-scrim: rgba(13, 13, 13, 0.82);
+
+  /* ---- Tipografia: famílias --------------------------------------------- */
+  --font-display: "Sora", "Space Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  /* ---- Tipografia: escala fluida (mobile → desktop) --------------------- */
+  --fs-display: clamp(3.25rem, 18.5vw, 13rem);   /* nome no hero */
+  --fs-h1: clamp(2.5rem, 7vw, 5.5rem);           /* chamada do contato */
+  --fs-h2: clamp(2rem, 4.6vw, 3.5rem);           /* títulos de seção */
+  --fs-h3: clamp(1.1875rem, 1.6vw, 1.375rem);    /* títulos de cartão */
+  --fs-lead: clamp(1.125rem, 1.5vw, 1.3125rem);  /* texto de abertura */
+  --fs-body: clamp(1rem, 1.1vw, 1.0625rem);      /* texto corrido */
+  --fs-small: 0.875rem;
+  --fs-label: 0.75rem;                           /* rótulos em mono, caixa alta */
+
+  --lh-tight: 0.9;
+  --lh-heading: 1.08;
+  --lh-body: 1.65;
+
+  --tracking-display: -0.045em;
+  --tracking-heading: -0.03em;
+  --tracking-label: 0.12em;
+
+  /* ---- Espaçamento (base 4px) ------------------------------------------- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+  --space-section: clamp(5rem, 11vw, 9.5rem);    /* respiro entre seções */
+
+  /* ---- Layout ----------------------------------------------------------- */
+  --container: 77.5rem;                          /* 1240px */
+  --gutter: clamp(1.25rem, 4vw, 3rem);
+  --nav-h: 4.5rem;
+
+  /* ---- Forma ------------------------------------------------------------ */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-pill: 999px;
+
+  /* ---- Movimento -------------------------------------------------------- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 180ms;
+  --dur-base: 360ms;
+  --dur-slow: 800ms;
+
+  /* ---- Camadas ---------------------------------------------------------- */
+  --z-nav: 50;
+  --z-grain: 60;
+}

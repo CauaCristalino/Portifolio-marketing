@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Guia de estilo — Portfólio Ana Julia</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Sora:wght@600;700;800&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <style>
+    /* Estilos apenas desta página de documentação */
+    .guide { padding-block: var(--space-8) var(--space-9); }
+    .guide__intro { display: grid; gap: var(--space-4); margin-bottom: var(--space-8); }
+    .guide__intro h1 { font-size: var(--fs-h2); }
+    .guide__block { padding-block: var(--space-7); border-top: 1px solid var(--color-line); }
+    .guide__block > h2 { margin-block: var(--space-4) var(--space-6); font-size: 1.75rem; }
+    .guide__sub { margin-block: var(--space-6) var(--space-4); font-family: var(--font-mono); font-size: var(--fs-label); font-weight: 500; letter-spacing: var(--tracking-label); text-transform: uppercase; color: var(--color-text-muted); }
+    .guide__row { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-4); }
+    .guide__cols { display: grid; gap: var(--space-5); grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); align-items: start; }
+    .guide code { font-family: var(--font-mono); font-size: 0.8125rem; color: var(--color-text-muted); }
+
+    .swatches { display: grid; gap: var(--space-4); grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr)); }
+    .swatch__chip { height: 5rem; border: 1px solid var(--color-line-strong); border-radius: var(--radius-md); }
+    .swatch__name { display: block; margin-top: var(--space-2); font-weight: 600; font-size: var(--fs-small); }
+
+    .type-row { display: grid; gap: var(--space-2); padding-block: var(--space-5); border-bottom: 1px solid var(--color-line); }
+    .type-row > :first-child { overflow-wrap: anywhere; }
+    @media (min-width: 60rem) { .type-row { grid-template-columns: minmax(0, 1fr) 17rem; align-items: baseline; gap: var(--space-6); } }
+
+    .space-row { display: flex; align-items: center; gap: var(--space-4); margin-bottom: var(--space-2); }
+    .space-row i { display: block; height: 0.75rem; border-radius: 2px; background: var(--color-accent); }
+    .space-row code { width: 9rem; flex: none; }
+
+    .demo-frame { position: relative; aspect-ratio: 16 / 9; border-radius: var(--radius-md); background: var(--color-surface); }
+  </style>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-video" viewBox="0 0 24 24"><rect x="3" y="6" width="12" height="12" rx="2"/><path d="M15 10.5l6-3.5v10l-6-3.5z"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-arrow-up-right" viewBox="0 0 24 24"><path d="M7 17L17 7M8 7h9v9"/></symbol>
+    <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="M9.5 6l6 6-6 6"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5v15l13-7.5z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 7l8.5 6 8.5-6"/></symbol>
+  </svg>
+
+  <main class="container guide">
+    <header class="guide__intro">
+      <p class="eyebrow"><span class="eyebrow__num">DS</span>Guia de estilo</p>
+      <h1>Sistema visual do portfólio</h1>
+      <p class="section-lead">Cores, tipografia, espaçamento e componentes usados no site. Os valores ficam em <code>css/tokens.css</code> e os componentes em <code>css/components.css</code>.</p>
+      <p><a class="btn btn--ghost btn--sm" href="index.html">Voltar ao portfólio <svg class="icon icon--move" aria-hidden="true"><use href="#i-arrow-right"/></svg></a></p>
+    </header>
+
+    <!-- CORES -->
+    <section class="guide__block" aria-labelledby="g-cores">
+      <p class="eyebrow"><span class="eyebrow__num">01</span>Fundamentos</p>
+      <h2 id="g-cores">Cores</h2>
+      <ul class="swatches">
+        <li><div class="swatch__chip" style="background:var(--color-bg)"></div><span class="swatch__name">Fundo</span><code>--color-bg · #0D0D0D</code></li>
+        <li><div class="swatch__chip" style="background:var(--color-surface)"></div><span class="swatch__name">Superfície</span><code>--color-surface · #141414</code></li>
+        <li><div class="swatch__chip" style="background:var(--color-surface-raised)"></div><span class="swatch__name">Superfície elevada</span><code>--color-surface-raised · #1C1C1B</code></li>
+        <li><div class="swatch__chip" style="background:var(--color-text)"></div><span class="swatch__name">Texto</span><code>--color-text · #F5F2EC</code></li>
+        <li><div class="swatch__chip" style="background:var(--color-text-muted)"></div><span class="swatch__name">Texto de apoio</span><code>--color-text-muted · #B3AFA7</code></li>
+        <li><div class="swatch__chip" style="background:var(--color-text-subtle)"></div><span class="swatch__name">Rótulos</span><code>--color-text-subtle · #8F8B84</code></li>
+        <li><div class="swatch__chip" style="background:var(--color-accent)"></div><span class="swatch__name">Destaque</span><code>--color-accent · #FF4D2E</code></li>
+        <li><div class="swatch__chip" style="background:var(--color-accent-hover)"></div><span class="swatch__name">Destaque (hover)</span><code>--color-accent-hover · #FF6C52</code></li>
+        <li><div class="swatch__chip" style="background:var(--color-success)"></div><span class="swatch__name">Sucesso</span><code>--color-success · #62D49B</code></li>
+        <li><div class="swatch__chip" style="background:var(--color-line-strong)"></div><span class="swatch__name">Linha forte</span><code>--color-line-strong · 30%</code></li>
+        <li><div class="swatch__chip" style="background:var(--color-line)"></div><span class="swatch__name">Linha</span><code>--color-line · 12%</code></li>
+      </ul>
+      <p class="guide__sub">Regra de uso</p>
+      <p style="max-width:60ch;color:var(--color-text-muted)">O laranja-avermelhado é o “REC” da câmera: aparece em ações principais, números e pequenos sinais, nunca em grandes áreas. Texto sobre ele é sempre escuro (<code>--color-on-accent</code>), o que mantém contraste de 6,3:1.</p>
+    </section>
+
+    <!-- TIPOGRAFIA -->
+    <section class="guide__block" aria-labelledby="g-tipo">
+      <p class="eyebrow"><span class="eyebrow__num">02</span>Fundamentos</p>
+      <h2 id="g-tipo">Tipografia</h2>
+      <div class="type-row"><p style="font-family:var(--font-display);font-weight:800;font-size:clamp(3rem,9vw,6rem);line-height:.9;letter-spacing:var(--tracking-display)">Ana Julia</p><code>Sora 800 · --fs-display<br>nome no hero</code></div>
+      <div class="type-row"><p style="font-family:var(--font-display);font-weight:700;font-size:var(--fs-h2);line-height:1.08;letter-spacing:var(--tracking-heading)">Do roteiro à entrega final.</p><code>Sora 700 · --fs-h2<br>títulos de seção</code></div>
+      <div class="type-row"><p style="font-family:var(--font-display);font-weight:700;font-size:var(--fs-h3);letter-spacing:var(--tracking-heading)">Produção e edição de vídeo</p><code>Sora 700 · --fs-h3<br>títulos de cartão</code></div>
+      <div class="type-row"><p style="font-size:var(--fs-lead);line-height:1.55">Transformo ideias em conteúdo que prende atenção e gera resultado para marcas.</p><code>Inter 400 · --fs-lead<br>texto de abertura</code></div>
+      <div class="type-row"><p style="color:var(--color-text-muted)">Meu estilo une estética cinematográfica e a linguagem rápida das redes: enquadramento pensado, cor com identidade e cortes no tempo certo.</p><code>Inter 400 · --fs-body<br>texto corrido</code></div>
+      <div class="type-row"><p style="font-family:var(--font-mono);font-size:var(--fs-label);font-weight:500;letter-spacing:var(--tracking-label);text-transform:uppercase">REC 00:00:12:08 · Showreel 2026</p><code>JetBrains Mono 500 · --fs-label<br>rótulos e metadados</code></div>
+    </section>
+
+    <!-- ESPAÇAMENTO -->
+    <section class="guide__block" aria-labelledby="g-espaco">
+      <p class="eyebrow"><span class="eyebrow__num">03</span>Fundamentos</p>
+      <h2 id="g-espaco">Espaçamento e forma</h2>
+      <div class="space-row"><code>--space-2 · 8px</code><i style="width:var(--space-2)"></i></div>
+      <div class="space-row"><code>--space-3 · 12px</code><i style="width:var(--space-3)"></i></div>
+      <div class="space-row"><code>--space-4 · 16px</code><i style="width:var(--space-4)"></i></div>
+      <div class="space-row"><code>--space-5 · 24px</code><i style="width:var(--space-5)"></i></div>
+      <div class="space-row"><code>--space-6 · 32px</code><i style="width:var(--space-6)"></i></div>
+      <div class="space-row"><code>--space-7 · 48px</code><i style="width:var(--space-7)"></i></div>
+      <div class="space-row"><code>--space-8 · 64px</code><i style="width:var(--space-8)"></i></div>
+      <div class="space-row"><code>--space-9 · 96px</code><i style="width:var(--space-9)"></i></div>
+      <p class="guide__sub">Raios</p>
+      <div class="guide__row">
+        <span class="tag" style="border-radius:var(--radius-sm)">--radius-sm · 4px</span>
+        <span class="tag" style="border-radius:var(--radius-md)">--radius-md · 8px</span>
+        <span class="tag">--radius-pill</span>
+      </div>
+    </section>
+
+    <!-- COMPONENTES -->
+    <section class="guide__block" aria-labelledby="g-comp">
+      <p class="eyebrow"><span class="eyebrow__num">04</span>Componentes</p>
+      <h2 id="g-comp">Componentes</h2>
+
+      <h3 class="guide__sub">Botões · <code>.btn</code></h3>
+      <div class="guide__row">
+        <a class="btn btn--primary btn--lg" href="#g-comp">Ver projetos <svg class="icon icon--move" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+        <a class="btn btn--ghost btn--lg" href="#g-comp">Entrar em contato</a>
+        <a class="btn btn--primary" href="#g-comp">Padrão</a>
+        <a class="btn btn--ghost" href="#g-comp">Padrão</a>
+        <a class="btn btn--primary btn--sm" href="#g-comp">Pequeno</a>
+        <button class="icon-btn" type="button" aria-label="Exemplo de botão de ícone"><svg class="icon" aria-hidden="true"><use href="#i-chevron-right"/></svg></button>
+        <button class="icon-btn" type="button" aria-label="Exemplo de botão de fechar"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
+      </div>
+
+      <h3 class="guide__sub">Rótulos · <code>.eyebrow</code> <code>.tag</code> <code>.status</code> <code>.chip</code></h3>
+      <div class="guide__row">
+        <p class="eyebrow"><span class="eyebrow__num">01</span>Sobre mim</p>
+        <span class="tag">Reels</span>
+        <span class="tag tag--solid">Stories · 9:16</span>
+        <span class="status"><span class="status__dot"></span>Disponível para novos projetos</span>
+        <span style="display:inline-flex;align-items:center;gap:.5rem;font-family:var(--font-mono);font-size:var(--fs-label);letter-spacing:var(--tracking-label)"><span class="rec-dot"></span>REC</span>
+      </div>
+      <div class="guide__row" style="margin-top:var(--space-4)">
+        <button class="chip" type="button" aria-pressed="true">Todos <span class="chip__count">09</span></button>
+        <button class="chip" type="button" aria-pressed="false">Vídeos <span class="chip__count">03</span></button>
+        <button class="chip" type="button" aria-pressed="false">Stories <span class="chip__count">03</span></button>
+      </div>
+
+      <h3 class="guide__sub">Cartões · <code>.service-card</code> <code>.project-card</code> <code>.testimonial</code></h3>
+      <div class="guide__cols">
+        <div class="service-grid" style="grid-template-columns:1fr">
+          <article class="service-card">
+            <div class="service-card__top">
+              <span class="service-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-video"/></svg></span>
+              <span class="service-card__num">01</span>
+            </div>
+            <h4 class="service-card__title" style="margin:0;font-family:var(--font-display);letter-spacing:var(--tracking-heading)">Produção e edição de vídeo</h4>
+            <p class="service-card__text">Vídeos com ritmo e acabamento pensados para cada plataforma.</p>
+            <ul class="service-card__tags"><li class="tag">Reels</li><li class="tag">TikTok</li></ul>
+          </article>
+        </div>
+
+        <article class="project-card">
+          <img class="project-card__img" src="assets/img/projetos/02-capa.svg" alt="" width="800" height="1000">
+          <div class="project-card__top"><span>02</span><span class="tag tag--solid">Institucional · 16:9</span></div>
+          <div class="project-card__body">
+            <p class="project-card__client">Clínica Vértice · Vídeo</p>
+            <h4 class="project-card__title" style="margin:0;font-family:var(--font-display);letter-spacing:var(--tracking-heading);line-height:var(--lh-heading)"><button class="project-card__trigger" type="button">Institucional: o lado humano da clínica</button></h4>
+            <div class="project-card__more"><div>
+              <p class="project-card__desc">Passe o mouse para ver o zoom suave e a descrição.</p>
+              <span class="project-card__cta">Ver case <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span>
+            </div></div>
+          </div>
+        </article>
+
+        <figure class="testimonial">
+          <blockquote class="testimonial__quote">Organização, prazo cumprido e um olhar que valoriza o produto.</blockquote>
+          <figcaption class="testimonial__author">
+            <span class="testimonial__avatar" aria-hidden="true">NC</span>
+            <span><span class="testimonial__name">Nome do cliente</span><span class="testimonial__role">Cargo · Empresa</span></span>
+          </figcaption>
+        </figure>
+      </div>
+
+      <h3 class="guide__sub">Mídia · <code>.player</code> <code>.frame</code></h3>
+      <div class="guide__cols">
+        <div class="player">
+          <img class="player__poster" src="assets/img/showreel-capa.svg" alt="">
+          <span class="frame" aria-hidden="true"></span>
+          <button class="player__play" type="button" aria-label="Exemplo de player">
+            <span class="player__play-icon"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg></span>
+            <span class="player__play-label">Assistir</span>
+          </button>
+        </div>
+        <div class="demo-frame"><span class="frame" aria-hidden="true"></span></div>
+      </div>
+
+      <h3 class="guide__sub">Dados e listas · <code>.stat</code> <code>.tool</code> <code>.skill-list</code> <code>.contact-link</code></h3>
+      <div class="guide__cols">
+        <div>
+          <div class="stat" style="margin-bottom:var(--space-5)"><span class="stat__label">projetos entregues</span><span class="stat__value"><small>+</small>50</span></div>
+          <div class="tool"><span class="tool__mark" aria-hidden="true">Pr</span><span><span class="tool__name">Premiere Pro</span><span class="tool__use">Edição de vídeo</span></span></div>
+        </div>
+        <ol class="skill-list">
+          <li><strong>Roteiro</strong><span>Da ideia ao texto final.</span></li>
+          <li><strong>Storytelling</strong><span>Narrativas que seguram a atenção.</span></li>
+        </ol>
+        <ul class="contact-list">
+          <li><a class="contact-link" href="#g-comp">
+            <span class="contact-link__icon"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></span>
+            <span><span class="contact-link__label">E-mail</span><span class="contact-link__value">anajulia@exemplo.com</span></span>
+            <svg class="icon contact-link__arrow" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+          </a></li>
+        </ul>
+      </div>
+
+      <h3 class="guide__sub">Formulário · <code>.field</code></h3>
+      <div class="guide__cols">
+        <div class="field">
+          <label class="field__label" for="g-nome">Nome</label>
+          <input class="field__input" id="g-nome" type="text" placeholder="Seu nome">
+        </div>
+        <div class="field">
+          <label class="field__label" for="g-msg">Mensagem</label>
+          <textarea class="field__input" id="g-msg" rows="3" placeholder="Fale sobre o projeto"></textarea>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

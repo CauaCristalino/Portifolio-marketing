@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ana Julia — Videomaker, Storymaker e Fotógrafo</title>
+  <meta name="description" content="Portfólio de Ana Julia: vídeos, stories e fotografia para marcas. Reels, TikTok, institucionais, campanhas e conteúdo para redes sociais.">
+  <meta name="theme-color" content="#0d0d0d">
+
+  <!-- Prévia do link no WhatsApp, LinkedIn e redes sociais.
+       Depois de publicar, troque og:image pelo endereço completo (https://…/assets/img/og.jpg). -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Ana Julia — Videomaker, Storymaker e Fotógrafo">
+  <meta property="og:description" content="Transformo ideias em conteúdo que prende atenção e gera resultado para marcas.">
+  <meta property="og:image" content="assets/img/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" as="image" href="assets/img/hero.svg" fetchpriority="high">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Sora:wght@600;700;800&display=swap">
+
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- Ícones reutilizáveis: use <svg class="icon"><use href="#i-nome"/></svg> -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-video" viewBox="0 0 24 24"><rect x="3" y="6" width="12" height="12" rx="2"/><path d="M15 10.5l6-3.5v10l-6-3.5z"/></symbol>
+    <symbol id="i-stories" viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><circle cx="12" cy="10.5" r="2.5"/><path d="M10.5 18h3"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><path d="M4 8h3l1.5-2.5h7L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.5"/></symbol>
+    <symbol id="i-megaphone" viewBox="0 0 24 24"><path d="M4 10v4a1 1 0 0 0 1 1h2l8 4V5L7 9H5a1 1 0 0 0-1 1z"/><path d="M18.5 9.5a3.5 3.5 0 0 1 0 5"/><path d="M8 15.5v3a1.5 1.5 0 0 0 3 0V17"/></symbol>
+    <symbol id="i-motion" viewBox="0 0 24 24"><path d="M3.5 18.5c5.5 0 3-9 8.5-9s3 9 8.5 9"/><path d="M12 3l2.5 2.5L12 8 9.5 5.5z"/><path d="M3.5 21.5h17"/></symbol>
+    <symbol id="i-clapper" viewBox="0 0 24 24"><path d="M4 10h16v9a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1z"/><path d="M4 10l-.6-3 15.7-3.3.6 3z"/><path d="M8 6l2 2.7M13 5l2 2.7"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-arrow-up-right" viewBox="0 0 24 24"><path d="M7 17L17 7M8 7h9v9"/></symbol>
+    <symbol id="i-arrow-down" viewBox="0 0 24 24"><path d="M12 5v14M6 13l6 6 6-6"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
+    <symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="M14.5 6l-6 6 6 6"/></symbol>
+    <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="M9.5 6l6 6-6 6"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5v15l13-7.5z"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.7-1.2A9 9 0 1 0 12 3z"/><path d="M9.2 8.3c-.4 1 .2 2.8 1.7 4.3s3.3 2.2 4.4 1.8"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 7l8.5 6 8.5-6"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17 7h.01"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="3"/><path d="M8 10.5V16M8 7.7v.1M11.5 16v-5.5M11.5 12.8a2.2 2.2 0 0 1 4.4 0V16"/></symbol>
+    <symbol id="i-portfolio" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9.5h18M9 4v5.5"/><path d="M7 14h6M7 17h3"/></symbol>
+  </svg>
+
+  <!-- ===================== NAVEGAÇÃO ===================== -->
+  <header class="nav" data-nav>
+    <div class="container nav__inner">
+      <a class="nav__brand" href="#inicio" aria-label="Ana Julia, voltar ao início">
+        <span class="rec-dot" aria-hidden="true"></span>Ana Julia
+      </a>
+
+      <nav class="nav__menu" id="menu" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#sobre">Sobre <span class="nav__link-num" aria-hidden="true">01</span></a></li>
+          <li><a class="nav__link" href="#servicos">Serviços <span class="nav__link-num" aria-hidden="true">02</span></a></li>
+          <li><a class="nav__link" href="#projetos">Projetos <span class="nav__link-num" aria-hidden="true">03</span></a></li>
+          <li><a class="nav__link" href="#showreel">Showreel <span class="nav__link-num" aria-hidden="true">04</span></a></li>
+          <li><a class="nav__link" href="#habilidades">Habilidades <span class="nav__link-num" aria-hidden="true">05</span></a></li>
+          <li><a class="nav__link" href="#clientes">Clientes <span class="nav__link-num" aria-hidden="true">06</span></a></li>
+          <li class="nav__item--mobile"><a class="nav__link" href="#contato">Contato <span class="nav__link-num" aria-hidden="true">07</span></a></li>
+        </ul>
+      </nav>
+
+      <a class="btn btn--primary btn--sm" href="#contato">Fale comigo</a>
+      <button class="nav__toggle" type="button" data-nav-toggle aria-controls="menu" aria-expanded="false" aria-label="Abrir menu"></button>
+    </div>
+    <div class="nav__progress" aria-hidden="true"></div>
+  </header>
+
+  <main id="conteudo">
+    <!-- ===================== 1. HERO ===================== -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <!-- Fundo: imagem de exemplo. Para usar vídeo em loop, informe o arquivo em js/config.js (hero.video). -->
+      <div class="hero__media" data-hero-media>
+        <img src="assets/img/hero.svg" alt="" width="1920" height="1080" fetchpriority="high">
+      </div>
+
+      <div class="hero__hud" aria-hidden="true">
+        <span class="frame"></span>
+        <span class="hero__hud-item hero__hud-item--rec"><span class="rec-dot"></span>REC <span class="hero__timecode" data-timecode>00:00:00:00</span></span>
+        <span class="hero__hud-item hero__hud-item--meta">Showreel 2026 · 4K · 24 fps</span>
+        <span class="hero__hud-item hero__hud-item--scroll">Role para ver <svg class="icon"><use href="#i-arrow-down"/></svg></span>
+      </div>
+
+      <div class="container hero__content">
+        <p><span class="status"><span class="status__dot" aria-hidden="true"></span>Disponível para novos projetos</span></p>
+        <h1 class="hero__name" id="hero-title">Ana Julia<span class="accent" aria-hidden="true">.</span></h1>
+
+        <div class="hero__bottom">
+          <div class="hero__intro">
+            <p class="hero__roles">Videomaker <span aria-hidden="true">•</span> Storymaker <span aria-hidden="true">•</span> Fotógrafo</p>
+            <p class="hero__tagline">Transformo ideias em conteúdo que prende atenção e gera resultado para marcas.</p>
+          </div>
+          <div class="hero__actions">
+            <a class="btn btn--primary btn--lg" href="#projetos">Ver projetos <svg class="icon icon--drop" aria-hidden="true"><use href="#i-arrow-down"/></svg></a>
+            <a class="btn btn--ghost btn--lg" href="#contato">Entrar em contato <svg class="icon icon--move" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Letreiro com os formatos de entrega -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <ul class="marquee__group">
+          <li>Reels</li><li>TikTok</li><li>Stories</li><li>Vídeo institucional</li><li>Publicidade</li><li>Fotografia de produto</li><li>Eventos</li><li>Retratos</li><li>Lifestyle</li><li>Motion graphics</li>
+        </ul>
+        <ul class="marquee__group">
+          <li>Reels</li><li>TikTok</li><li>Stories</li><li>Vídeo institucional</li><li>Publicidade</li><li>Fotografia de produto</li><li>Eventos</li><li>Retratos</li><li>Lifestyle</li><li>Motion graphics</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ===================== 2. SOBRE MIM ===================== -->
+    <section class="section about" id="sobre" aria-labelledby="sobre-title">
+      <div class="container">
+        <div class="about__grid">
+          <figure class="about__photo" data-reveal>
+            <!-- Troque por uma foto sua (proporção 4:5, ex.: 1200 × 1500 px) -->
+            <img src="assets/img/retrato.svg" alt="Retrato de Ana Julia" width="800" height="1000" loading="lazy" decoding="async">
+            <span class="frame" aria-hidden="true"></span>
+            <figcaption class="about__caption">Ana Julia · atrás da câmera</figcaption>
+          </figure>
+
+          <div class="about__text">
+            <p class="eyebrow" data-reveal><span class="eyebrow__num">01</span>Sobre mim</p>
+            <h2 class="section-title" id="sobre-title" data-reveal>Olhar de cinema, ritmo de rede social.</h2>
+            <p class="section-lead" data-reveal>Comecei filmando com o celular e nunca mais parei. Hoje crio vídeos, stories e fotos para marcas que querem ser lembradas, do roteiro à entrega final.</p>
+            <p data-reveal>Meu estilo une estética cinematográfica e a linguagem rápida das redes: enquadramento pensado, cor com identidade e cortes no tempo certo. O que me diferencia é pensar no resultado antes de apertar o REC. Cada conteúdo nasce de um objetivo de marketing e termina em algo que as pessoas querem assistir até o fim.</p>
+          </div>
+        </div>
+
+        <!-- Números de destaque: ajuste os valores em data-count e no texto -->
+        <dl class="stats" data-stagger>
+          <div class="stat">
+            <dt class="stat__label">projetos entregues</dt>
+            <dd class="stat__value"><small>+</small><span data-count="50">50</span></dd>
+          </div>
+          <div class="stat">
+            <dt class="stat__label">milhões de visualizações</dt>
+            <dd class="stat__value"><small>+</small><span data-count="2">2</span><small> mi</small></dd>
+          </div>
+          <div class="stat">
+            <dt class="stat__label">anos de experiência</dt>
+            <dd class="stat__value"><span data-count="4">4</span></dd>
+          </div>
+          <div class="stat">
+            <dt class="stat__label">marcas atendidas</dt>
+            <dd class="stat__value"><small>+</small><span data-count="20">20</span></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ===================== 3. SERVIÇOS ===================== -->
+    <section class="section section--line" id="servicos" aria-labelledby="servicos-title">
+      <div class="container">
+        <header class="section-head section-head--split">
+          <p class="eyebrow" data-reveal><span class="eyebrow__num">02</span>Serviços</p>
+          <h2 class="section-title" id="servicos-title" data-reveal>Do roteiro à entrega final.</h2>
+          <p class="section-lead" data-reveal>Cuido de todas as etapas ou entro na parte em que a sua equipe precisa de reforço.</p>
+        </header>
+
+        <ul class="service-grid" data-stagger>
+          <li>
+            <article class="service-card">
+              <div class="service-card__top">
+                <span class="service-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-video"/></svg></span>
+                <span class="service-card__num" aria-hidden="true">01</span>
+              </div>
+              <h3 class="service-card__title">Produção e edição de vídeo</h3>
+              <p class="service-card__text">Vídeos com ritmo e acabamento pensados para cada plataforma, do conteúdo rápido ao filme da marca.</p>
+              <ul class="service-card__tags"><li class="tag">Reels</li><li class="tag">TikTok</li><li class="tag">Institucional</li><li class="tag">Publicitário</li></ul>
+            </article>
+          </li>
+          <li>
+            <article class="service-card">
+              <div class="service-card__top">
+                <span class="service-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-stories"/></svg></span>
+                <span class="service-card__num" aria-hidden="true">02</span>
+              </div>
+              <h3 class="service-card__title">Stories e conteúdo para redes sociais</h3>
+              <p class="service-card__text">Stories, bastidores e conteúdo do dia a dia que aproximam a marca de quem acompanha.</p>
+              <ul class="service-card__tags"><li class="tag">Stories</li><li class="tag">Coberturas</li><li class="tag">Séries</li></ul>
+            </article>
+          </li>
+          <li>
+            <article class="service-card">
+              <div class="service-card__top">
+                <span class="service-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-camera"/></svg></span>
+                <span class="service-card__num" aria-hidden="true">03</span>
+              </div>
+              <h3 class="service-card__title">Fotografia</h3>
+              <p class="service-card__text">Imagens com direção de arte e tratamento de cor, prontas para site, anúncios e redes.</p>
+              <ul class="service-card__tags"><li class="tag">Produtos</li><li class="tag">Eventos</li><li class="tag">Retratos</li><li class="tag">Lifestyle</li></ul>
+            </article>
+          </li>
+          <li>
+            <article class="service-card">
+              <div class="service-card__top">
+                <span class="service-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-megaphone"/></svg></span>
+                <span class="service-card__num" aria-hidden="true">04</span>
+              </div>
+              <h3 class="service-card__title">Captação e edição para campanhas</h3>
+              <p class="service-card__text">Da pré-produção ao corte final, com versões adaptadas para cada formato e canal da campanha.</p>
+              <ul class="service-card__tags"><li class="tag">Captação</li><li class="tag">Edição</li><li class="tag">Adaptações</li></ul>
+            </article>
+          </li>
+          <li>
+            <article class="service-card">
+              <div class="service-card__top">
+                <span class="service-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-motion"/></svg></span>
+                <span class="service-card__num" aria-hidden="true">05</span>
+              </div>
+              <h3 class="service-card__title">Motion graphics</h3>
+              <p class="service-card__text">Legendas animadas, letterings e vinhetas que dão acabamento e identidade aos vídeos.</p>
+              <ul class="service-card__tags"><li class="tag">Legendas</li><li class="tag">Lettering</li><li class="tag">Vinhetas</li></ul>
+            </article>
+          </li>
+          <li>
+            <article class="service-card">
+              <div class="service-card__top">
+                <span class="service-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-clapper"/></svg></span>
+                <span class="service-card__num" aria-hidden="true">06</span>
+              </div>
+              <h3 class="service-card__title">Direção criativa</h3>
+              <p class="service-card__text">Conceito, roteiro e planejamento visual para que todo o conteúdo conte a mesma história.</p>
+              <ul class="service-card__tags"><li class="tag">Conceito</li><li class="tag">Roteiro</li><li class="tag">Moodboard</li></ul>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== 4. PROJETOS ===================== -->
+    <section class="section section--line" id="projetos" aria-labelledby="projetos-title">
+      <div class="container">
+        <header class="section-head section-head--split">
+          <p class="eyebrow" data-reveal><span class="eyebrow__num">03</span>Projetos e cases</p>
+          <h2 class="section-title" id="projetos-title" data-reveal>Trabalhos selecionados.</h2>
+          <p class="section-lead" data-reveal>Cada case mostra o desafio da marca e o resultado da entrega. Toque em um projeto para ver o material completo.</p>
+        </header>
+
+        <div class="projects__bar" data-reveal>
+          <div class="filters" role="group" aria-label="Filtrar projetos por categoria">
+            <button class="chip" type="button" data-filter="todos" aria-pressed="true">Todos <span class="chip__count"></span></button>
+            <button class="chip" type="button" data-filter="video" aria-pressed="false">Vídeos <span class="chip__count"></span></button>
+            <button class="chip" type="button" data-filter="stories" aria-pressed="false">Stories <span class="chip__count"></span></button>
+            <button class="chip" type="button" data-filter="foto" aria-pressed="false">Fotografia <span class="chip__count"></span></button>
+          </div>
+          <p class="projects__count" data-project-count aria-live="polite"></p>
+        </div>
+
+        <!-- Os cartões são gerados a partir de js/config.js -->
+        <ul class="project-grid" data-project-grid></ul>
+        <noscript><p>Ative o JavaScript para ver os projetos ou peça o portfólio completo pelo contato abaixo.</p></noscript>
+
+        <div class="projects__more" data-reveal>
+          <p>Quer ver mais trabalhos de um formato específico?</p>
+          <a class="btn btn--ghost" href="#contato">Pedir portfólio completo <svg class="icon icon--move" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 5. SHOWREEL ===================== -->
+    <section class="section showreel" id="showreel" aria-labelledby="showreel-title">
+      <div class="container">
+        <header class="section-head section-head--split">
+          <p class="eyebrow" data-reveal><span class="eyebrow__num">04</span>Showreel</p>
+          <h2 class="section-title" id="showreel-title" data-reveal>Um minuto com o melhor do meu trabalho.</h2>
+          <p class="section-lead" data-reveal>Vídeos, stories e fotos de projetos recentes, em menos de 60 segundos.</p>
+        </header>
+
+        <div class="showreel__stage" data-reveal>
+          <!-- Informe o link do vídeo em js/config.js (showreel.url) e troque a capa abaixo -->
+          <div class="player" data-showreel>
+            <img class="player__poster" src="assets/img/showreel-capa.svg" alt="" width="1280" height="720" loading="lazy" decoding="async">
+            <span class="frame" aria-hidden="true"></span>
+            <button class="player__play" type="button" aria-label="Reproduzir o showreel">
+              <span class="player__play-icon"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg></span>
+              <span class="player__play-label">Assistir ao showreel</span>
+            </button>
+            <p class="player__note" role="status" hidden>Vídeo de exemplo. O link do showreel ainda não foi adicionado.</p>
+          </div>
+          <p class="showreel__meta" aria-hidden="true"><span>Showreel 2026</span><span>00:58</span><span>4K · 24 fps</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 6. FERRAMENTAS E HABILIDADES ===================== -->
+    <section class="section" id="habilidades" aria-labelledby="habilidades-title">
+      <div class="container">
+        <header class="section-head section-head--split">
+          <p class="eyebrow" data-reveal><span class="eyebrow__num">05</span>Ferramentas e habilidades</p>
+          <h2 class="section-title" id="habilidades-title" data-reveal>Técnica a serviço da história.</h2>
+          <p class="section-lead" data-reveal>Os programas mudam a cada projeto. O cuidado com a narrativa é o mesmo em todos.</p>
+        </header>
+
+        <div class="skills__grid">
+          <div>
+            <h3 class="skills__label" data-reveal>Ferramentas</h3>
+            <ul class="tool-grid" data-stagger>
+              <li><div class="tool"><span class="tool__mark" aria-hidden="true">Pr</span><span><span class="tool__name">Premiere Pro</span><span class="tool__use">Edição de vídeo</span></span></div></li>
+              <li><div class="tool"><span class="tool__mark" aria-hidden="true">Ae</span><span><span class="tool__name">After Effects</span><span class="tool__use">Motion e composição</span></span></div></li>
+              <li><div class="tool"><span class="tool__mark" aria-hidden="true">Dv</span><span><span class="tool__name">DaVinci Resolve</span><span class="tool__use">Color grading</span></span></div></li>
+              <li><div class="tool"><span class="tool__mark" aria-hidden="true">Lr</span><span><span class="tool__name">Lightroom</span><span class="tool__use">Tratamento de fotos</span></span></div></li>
+              <li><div class="tool"><span class="tool__mark" aria-hidden="true">Ps</span><span><span class="tool__name">Photoshop</span><span class="tool__use">Retoque e composição</span></span></div></li>
+              <li><div class="tool"><span class="tool__mark" aria-hidden="true">Cc</span><span><span class="tool__name">CapCut</span><span class="tool__use">Edição ágil para redes</span></span></div></li>
+              <li><div class="tool"><span class="tool__mark" aria-hidden="true">Cv</span><span><span class="tool__name">Canva</span><span class="tool__use">Peças e stories</span></span></div></li>
+              <li><div class="tool"><span class="tool__mark" aria-hidden="true">Fg</span><span><span class="tool__name">Figma</span><span class="tool__use">Layouts e storyboards</span></span></div></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="skills__label" data-reveal>Habilidades</h3>
+            <ol class="skill-list" data-reveal>
+              <li><strong>Roteiro</strong><span>Da ideia ao texto final, pensado para cada formato.</span></li>
+              <li><strong>Storytelling</strong><span>Narrativas que seguram a atenção do primeiro ao último segundo.</span></li>
+              <li><strong>Direção de arte</strong><span>Cenário, luz e paleta a serviço da identidade da marca.</span></li>
+              <li><strong>Edição</strong><span>Ritmo, corte e trilha no tempo de cada plataforma.</span></li>
+              <li><strong>Color grading</strong><span>Cor consistente e com personalidade em todo o material.</span></li>
+              <li><strong>Captação de áudio</strong><span>Som limpo em estúdio, em externa ou em evento.</span></li>
+              <li><strong>Planejamento de conteúdo</strong><span>Calendário e pautas alinhados aos objetivos de marketing.</span></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 7. MARCAS E DEPOIMENTOS ===================== -->
+    <section class="section section--line" id="clientes" aria-labelledby="clientes-title">
+      <div class="container">
+        <header class="section-head section-head--split">
+          <p class="eyebrow" data-reveal><span class="eyebrow__num">06</span>Marcas e depoimentos</p>
+          <h2 class="section-title" id="clientes-title" data-reveal>Quem já confiou no meu olhar.</h2>
+          <p class="section-lead" data-reveal>Marcas de alimentação, moda, saúde, beleza e eventos com quem já trabalhei.</p>
+        </header>
+
+        <!-- Troque cada item pelo logo da marca: <li><img src="assets/img/logos/marca.svg" alt="Nome da marca"></li> -->
+        <ul class="logo-wall" aria-label="Marcas atendidas" data-reveal>
+          <li>Café Aurora</li>
+          <li>Clínica Vértice</li>
+          <li>Feira Pulsar</li>
+          <li>Bela Massa</li>
+          <li>Studio Lume</li>
+          <li>Oliva</li>
+        </ul>
+
+        <!-- Depoimentos de exemplo: troque pelo texto, nome e cargo reais -->
+        <ul class="testimonial-grid clients__testimonials" data-stagger>
+          <li>
+            <figure class="testimonial">
+              <blockquote class="testimonial__quote">Ana Julia entendeu a marca logo na primeira reunião. Os Reels do lançamento tiveram o melhor alcance orgânico do nosso perfil no ano.</blockquote>
+              <figcaption class="testimonial__author">
+                <span class="testimonial__avatar" aria-hidden="true">NC</span>
+                <span><span class="testimonial__name">Nome do cliente</span><span class="testimonial__role">Cargo · Empresa</span></span>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="testimonial">
+              <blockquote class="testimonial__quote">Organização, prazo cumprido e um olhar que valoriza o produto. As fotos entraram no site, nos anúncios e nas embalagens.</blockquote>
+              <figcaption class="testimonial__author">
+                <span class="testimonial__avatar" aria-hidden="true">NC</span>
+                <span><span class="testimonial__name">Nome do cliente</span><span class="testimonial__role">Cargo · Empresa</span></span>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="testimonial">
+              <blockquote class="testimonial__quote">A cobertura em stories fez o evento continuar nas redes. Recebemos mensagens de quem não foi, querendo estar na próxima edição.</blockquote>
+              <figcaption class="testimonial__author">
+                <span class="testimonial__avatar" aria-hidden="true">NC</span>
+                <span><span class="testimonial__name">Nome do cliente</span><span class="testimonial__role">Cargo · Empresa</span></span>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== 8. CONTATO ===================== -->
+    <section class="section section--line contact" id="contato" aria-labelledby="contato-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow" data-reveal><span class="eyebrow__num">07</span>Contato</p>
+          <h2 class="contact__title" id="contato-title" data-reveal>Vamos criar algo incrível juntos<span class="accent">?</span></h2>
+          <p class="section-lead" data-reveal>Conte um pouco sobre a sua marca e o que você precisa. Costumo responder em até um dia útil.</p>
+        </header>
+
+        <div class="contact__grid">
+          <div class="contact__aside">
+            <!-- Os links e textos abaixo vêm de js/config.js -->
+            <ul class="contact-list" data-stagger>
+              <li>
+                <a class="contact-link" href="#contato" data-link="whatsapp" target="_blank" rel="noopener">
+                  <span class="contact-link__icon"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg></span>
+                  <span><span class="contact-link__label">WhatsApp</span><span class="contact-link__value" data-text="whatsapp">(11) 99999-9999</span></span>
+                  <svg class="icon contact-link__arrow" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+                </a>
+              </li>
+              <li>
+                <a class="contact-link" href="#contato" data-link="email">
+                  <span class="contact-link__icon"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></span>
+                  <span><span class="contact-link__label">E-mail</span><span class="contact-link__value" data-text="email">anajulia@exemplo.com</span></span>
+                  <svg class="icon contact-link__arrow" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+                </a>
+              </li>
+              <li>
+                <a class="contact-link" href="#contato" data-link="instagram" target="_blank" rel="noopener">
+                  <span class="contact-link__icon"><svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg></span>
+                  <span><span class="contact-link__label">Instagram</span><span class="contact-link__value" data-text="instagram">@seu_perfil</span></span>
+                  <svg class="icon contact-link__arrow" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+                </a>
+              </li>
+              <li>
+                <a class="contact-link" href="#contato" data-link="linkedin" target="_blank" rel="noopener">
+                  <span class="contact-link__icon"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></span>
+                  <span><span class="contact-link__label">LinkedIn</span><span class="contact-link__value" data-text="linkedin">linkedin.com/in/seu-perfil</span></span>
+                  <svg class="icon contact-link__arrow" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+                </a>
+              </li>
+              <li>
+                <a class="contact-link" href="#contato" data-link="behance" target="_blank" rel="noopener">
+                  <span class="contact-link__icon"><svg class="icon" aria-hidden="true"><use href="#i-portfolio"/></svg></span>
+                  <span><span class="contact-link__label">Behance / Drive</span><span class="contact-link__value" data-text="behance">behance.net/seu-perfil</span></span>
+                  <svg class="icon contact-link__arrow" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+                </a>
+              </li>
+            </ul>
+
+            <p data-reveal>
+              <a class="btn btn--ghost btn--lg" href="assets/curriculo-ana-julia.pdf" data-link="curriculo" download>
+                <svg class="icon icon--drop" aria-hidden="true"><use href="#i-download"/></svg>Baixar currículo (PDF)
+              </a>
+            </p>
+          </div>
+
+          <div class="contact__panel" data-reveal>
+            <h3 class="contact__panel-title">Envie uma mensagem</h3>
+            <form class="form" data-contact-form>
+              <div class="field">
+                <label class="field__label" for="campo-nome">Nome</label>
+                <input class="field__input" id="campo-nome" name="nome" type="text" autocomplete="name" placeholder="Seu nome" required>
+              </div>
+              <div class="field">
+                <label class="field__label" for="campo-email">E-mail</label>
+                <input class="field__input" id="campo-email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="voce@empresa.com" required>
+              </div>
+              <div class="field">
+                <label class="field__label" for="campo-mensagem">Mensagem</label>
+                <textarea class="field__input" id="campo-mensagem" name="mensagem" rows="5" placeholder="Fale sobre o projeto, o prazo e o formato que você imagina" required></textarea>
+              </div>
+              <!-- Campo-isca contra robôs: fica invisível para pessoas -->
+              <div class="visually-hidden" aria-hidden="true">
+                <label for="campo-website">Não preencha este campo</label>
+                <input id="campo-website" name="website" type="text" tabindex="-1" autocomplete="off">
+              </div>
+              <button class="btn btn--primary btn--lg btn--block" type="submit">Enviar mensagem <svg class="icon icon--move" aria-hidden="true"><use href="#i-arrow-right"/></svg></button>
+              <p class="form__status" data-form-status role="status" aria-live="polite"><span data-form-note>Ao enviar, seu aplicativo de e-mail abre com a mensagem pronta.</span></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== RODAPÉ ===================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="footer__name">Ana Julia</span>
+        <span class="footer__roles">Videomaker • Storymaker • Fotógrafo</span>
+      </div>
+
+      <ul class="footer__social" aria-label="Redes sociais">
+        <li><a class="icon-btn" href="#contato" data-link="instagram" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg></a></li>
+        <li><a class="icon-btn" href="#contato" data-link="linkedin" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></a></li>
+        <li><a class="icon-btn" href="#contato" data-link="behance" target="_blank" rel="noopener" aria-label="Behance"><svg class="icon" aria-hidden="true"><use href="#i-portfolio"/></svg></a></li>
+        <li><a class="icon-btn" href="#contato" data-link="whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg></a></li>
+        <li><a class="icon-btn" href="#contato" data-link="email" aria-label="E-mail"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></a></li>
+      </ul>
+
+      <p class="footer__copy">
+        © <span data-year>2026</span> Ana Julia. Todos os direitos reservados.
+        <a class="footer__top" href="#inicio">Voltar ao topo <svg class="icon" aria-hidden="true"><use href="#i-arrow-up"/></svg></a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- ===================== MODAL DE PROJETO ===================== -->
+  <dialog class="modal" data-modal aria-labelledby="modal-title">
+    <div class="modal__panel">
+      <button class="icon-btn modal__close" type="button" data-modal-close aria-label="Fechar projeto"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
+      <div class="modal__scroll">
+        <div class="modal__media" data-modal-media></div>
+        <div class="modal__body" data-modal-body></div>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="js/config.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
