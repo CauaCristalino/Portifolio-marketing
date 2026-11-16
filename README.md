@@ -95,7 +95,7 @@ Todos os valores estão em `css/tokens.css`. Para ver cores, tipografia e compon
 - Contraste AA em todos os textos; texto escuro sobre o laranja (6,3:1).
 - Navegação completa por teclado, link "Pular para o conteúdo" e foco visível.
 - Respeita a preferência "reduzir movimento" do sistema.
-- Sem bibliotecas: cerca de 30 KB de CSS e JS, imagens com carregamento sob demanda.
+- Sem bibliotecas: CSS e JS somam cerca de 16 KB comprimidos, e as imagens carregam sob demanda.
 
 ## Publicar no GitHub Pages
 
